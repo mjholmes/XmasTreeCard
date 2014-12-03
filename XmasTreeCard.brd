@@ -19,7 +19,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -15744,10 +15744,12 @@
 <rectangle x1="44.993946875" y1="35.821540625" x2="45.226646875" y2="35.827496875" layer="21"/>
 <rectangle x1="45.011846875" y1="35.8275" x2="45.208746875" y2="35.83346875" layer="21"/>
 <rectangle x1="45.029746875" y1="35.833471875" x2="45.190846875" y2="35.839440625" layer="21"/>
-<text x="-1.06809375" y="79.713153125" size="1.27" layer="21" font="vector" ratio="12" rot="SR270">XmasCard v1</text>
+<text x="-1.06809375" y="79.713153125" size="1.27" layer="21" font="vector" ratio="12" rot="SR270">XmasCard v1.1</text>
 <text x="39.418003125" y="26.630721875" size="1.27" layer="21" font="vector" ratio="14" rot="SR260" align="center">Colin the Aardvark
 production</text>
 <text x="17.87921875" y="44.673121875" size="1.27" layer="21" font="vector" ratio="14" rot="SR270" align="center">Remove if stored</text>
+<text x="100.78263125" y="46.470996875" size="1.27" layer="21" font="vector" ratio="12" rot="SR270" align="center">CC BY-SA 4.0
+http://github.com/mjholmes</text>
 </plain>
 <libraries>
 <library name="mjholmes">
@@ -16131,6 +16133,52 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 </package>
 </packages>
 </library>
+<library name="SparkFun-Aesthetics">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="OSHW-LOGO-M">
+<polygon width="0.15" layer="21">
+<vertex x="0.6578" y="-1.588" curve="9.499253"/>
+<vertex x="0.9108" y="-1.4576"/>
+<vertex x="1.5392" y="-1.97"/>
+<vertex x="1.97" y="-1.5392"/>
+<vertex x="1.4576" y="-0.9108" curve="19.001165"/>
+<vertex x="1.6747" y="-0.3866"/>
+<vertex x="2.4814" y="-0.3047"/>
+<vertex x="2.4814" y="0.3047"/>
+<vertex x="1.6747" y="0.3866" curve="19.001165"/>
+<vertex x="1.4576" y="0.9108"/>
+<vertex x="1.97" y="1.5392"/>
+<vertex x="1.5392" y="1.97"/>
+<vertex x="0.9108" y="1.4576" curve="19.001165"/>
+<vertex x="0.3866" y="1.6747"/>
+<vertex x="0.3047" y="2.4814"/>
+<vertex x="-0.3047" y="2.4814"/>
+<vertex x="-0.3866" y="1.6747" curve="19.001165"/>
+<vertex x="-0.9108" y="1.4576"/>
+<vertex x="-1.5392" y="1.97"/>
+<vertex x="-1.97" y="1.5392"/>
+<vertex x="-1.4576" y="0.9108" curve="19.001165"/>
+<vertex x="-1.6747" y="0.3866"/>
+<vertex x="-2.4814" y="0.3047"/>
+<vertex x="-2.4814" y="-0.3047"/>
+<vertex x="-1.6747" y="-0.3866" curve="19.001165"/>
+<vertex x="-1.4576" y="-0.9108"/>
+<vertex x="-1.97" y="-1.5392"/>
+<vertex x="-1.5392" y="-1.97"/>
+<vertex x="-0.9108" y="-1.4576" curve="9.499253"/>
+<vertex x="-0.6578" y="-1.588"/>
+<vertex x="-0.299" y="-0.7218" curve="-67.507353"/>
+<vertex x="-0.7813" y="0" curve="-247.497552"/>
+<vertex x="0.299" y="-0.7218"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16420,6 +16468,7 @@ These rules are the defaults modified by mjholmes as per the Hackvana spec avail
 <attribute name="SPICEPREFIX" value="C" x="50.8" y="46.355" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="S1" library="mjholmes" package="MMS_228_T" value="" x="13.97" y="11.43" rot="R180"/>
+<element name="U$6" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="" x="106.1290625" y="47.7181" rot="R270"/>
 </elements>
 <signals>
 <signal name="N$1">
