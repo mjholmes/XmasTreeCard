@@ -1,4 +1,5 @@
-# XmasTreeCard - a geeky Christmas card with LEDs and an OLED display
+# XmasTreeCard
+#### A geeky Christmas card with LEDs and an OLED display
 
 This circuit and board assembled into a Christmas tree shaped card with 11 LEDs driven by a 12-bit shift register and a small, 0.91", OLED display.
 
